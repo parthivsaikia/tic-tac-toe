@@ -1,0 +1,81 @@
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/azoft-sans/azoft-sans.ttf);
+}
+*{
+  box-sizing: border-box;
+  font-family: myfont;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #3498db, #8e44ad);
+}
+
+.container{
+  /* width: 90%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.turn{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: ;
+}
+
+.board {
+    margin: 50px;
+    display: grid;
+    height: 400px;
+    width: 400px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+    background-color: rgb(14, 59, 56);
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    border: 1px solid grey;
+    background: rgb(202, 160, 206);
+    cursor: pointer;
+  }
+
+  dialog{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    font-weight: bold;
+    background-color: #ff7a7a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+
+  dialog button{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  dialog button:hover{
+    background-color: #0cabdb;
+  }
