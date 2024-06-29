@@ -1,6 +1,6 @@
 @font-face {
   font-family: myfont;
-  src: url(../fonts/azoft-sans/azoft-sans.ttf);
+  src: url(fonts/azoft-sans/azoft-sans.ttf);
 }
 *{
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body{
 .turn{
   text-align: center;
   font-size: 1.5rem;
-  font-family: ;
+  font-family: myfont;
 }
 
 .board {
